@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{width: 200px;height: 200px;margin: 100px auto;}
+	div img{width: 200px;height: 200px; transition:1s all ease;}
+	input{margin: 30px auto;}
+	</style>
+	<script >
+	window.onload=function(){
+		var oDiv=document.querySelector('div');
+		var oBtn=document.querySelector('#btn1');
+		var oImg=document.querySelector('img');
+		var i=0;
+		oBtn.onclick=function(){
+			i+=90;
+			oImg.style.transform='rotate('+i+'deg)';
+		};
+	};
+	</script>
+</head>
+<body>
+	<input type="button" value="按钮" id="btn1">
+	<div>
+		<img src="4.jpg">
+	</div>
+
+</body>
+</html>
